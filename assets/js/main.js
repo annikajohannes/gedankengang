@@ -1,4 +1,17 @@
 
+Datepicker.locales.de = {
+	days: ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"],
+	daysShort: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
+	daysMin: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
+	months: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
+	monthsShort: ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"],
+	today: "Heute",
+	monthsTitle: "Monate",
+	clear: "Löschen",
+	weekStart: 1,
+	format: "dd.mm.yyyy"
+};
+
 const calendarElement = document.getElementById('calendar');
 const slotContainer = document.getElementById('slot-container');
 
@@ -8,6 +21,7 @@ const bookedDate = document.getElementById('booked-date');
 
 const nameInput = document.getElementById('name-input');
 const mailInput = document.getElementById('mail-input');
+const phoneInput  = document.getElementById('phone-input');
 
 const freeSlots = [];
 let picker;
@@ -25,6 +39,7 @@ window.onload = () => {
 				freeSlots.push(new Date(item.start.dateTime));
 			}); 
 			datepicker = new Datepicker(calendarElement, {
+				language: 'de',
 				beforeShowDay: function (date) {
 				return !!freeSlots.find(s => s.toDateString() == date.toDateString()); }
 			});
@@ -70,7 +85,8 @@ function bookSlot(date) {
 	xhr.send(JSON.stringify({
 		date: date.getTime(),
 		name: nameInput.value,
-		mail: mailInput.value
+		mail: mailInput.value,
+		phone: phoneInput.value
 	}));
 }
 
