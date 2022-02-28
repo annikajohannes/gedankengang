@@ -650,6 +650,13 @@ header.special .icon:before {
 	#banner .inner br {
 		display: none;
 	}
+
+	.row > .col-cal1 {
+		width: 100%;
+	}
+	.row > .col-cal2 {
+		width: 100%;
+	}
 }
 
 
@@ -722,14 +729,14 @@ header.special .icon:before {
 	position: relative;
 }
 .gallery div img:nth-child(1) {
-	width: 145px;
+	width: 112px;
 }
 .gallery div img:nth-child(2) {
 	position: absolute;
 	top: 2px;
-	left: 165px;
+	left: 122px;
 	z-index: 10;
-	width: 810px;
+	width: 864px;
 }
 .gallery div:hover img:nth-child(2) {
 	z-index: 20;
