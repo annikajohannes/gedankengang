@@ -424,10 +424,23 @@ header.special .icon:before {
 	grid-auto-rows: auto
 }
 
-/* Mobile */
+/* mobile */
 @media screen and (max-width: 620px) {
 	.newsimages > img {
 		width: 100%;
+	}
+}
+@media screen and (max-width: 980px) {
+	.datepicker {
+		text-align: center;
+	}
+	.row > .col-cal1 {
+		width: 100%;
+		padding-bottom: 0px;
+	}
+	.row > .col-cal2 {
+		width: 100%;
+		padding-top: 0px;
 	}
 }
 @media screen and (max-width: 1400px) {
@@ -440,8 +453,7 @@ header.special .icon:before {
 	#banner .inner header h3 {
 		margin-top: -10px;
 	}
-
-	/*side nav*/
+	/* side nav */
 	#header {
 		display: none;
 	}
