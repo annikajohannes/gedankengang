@@ -1,5 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("datepicker.min.css");
+@import url("grid-gallery.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
@@ -418,25 +419,17 @@ header.special .icon:before {
 	width: 620px;
 }
 
-.gallery {
-	position: relative;
+/* gallery */
+.gg-box {
+	grid-auto-rows: auto
 }
-.gallery div img:nth-child(1) {
-	width: 112px;
-}
-.gallery div img:nth-child(2) {
-	position: absolute;
-	top: 2px;
-	left: 122px;
-	z-index: 10;
-	width: 864px;
-}
-.gallery div:hover img:nth-child(2) {
-	z-index: 20;
-}
-
 
 /* Mobile */
+@media screen and (max-width: 620px) {
+	.newsimages > img {
+		width: 100%;
+	}
+}
 @media screen and (max-width: 1400px) {
 	body, input, select, textarea {
 		font-size: 13pt;
@@ -446,9 +439,6 @@ header.special .icon:before {
 	}
 	#banner .inner header h3 {
 		margin-top: -10px;
-	}
-	.newsimages > img {
-		width: 100%;
 	}
 
 	/*side nav*/
@@ -480,7 +470,7 @@ header.special .icon:before {
 		left: 0;
 		position: fixed;
 		top: 0;
-		width: 100%;
+		width: 50%;
 		z-index: 10001;
 	}
 	#navButton .toggle {
