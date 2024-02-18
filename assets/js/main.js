@@ -37,7 +37,7 @@ window.onload = () => {
         success: function (response) {
 			response.items.forEach(item => {
 				freeSlots.push(new Date(item.start.dateTime));
-			}); 
+			});
 			datepicker = new Datepicker(calendarElement, {
 				language: 'de',
 				beforeShowDay: function (date) {
@@ -59,8 +59,8 @@ function formatDate(date) {
 
 function validateInput() {
 	dateButtons.forEach(b => b.disabled = nameInput.value.length == 0 || !mailInput.value.toLowerCase().match(
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)
-	)
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+	))
 }
 
 nameInput.oninput = validateInput
