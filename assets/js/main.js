@@ -135,13 +135,6 @@ calendarElement.addEventListener("changeDate", function (e) {
 			offset: function() { return $header.height() + 10; }
 		});
 
-	// Dropdowns.
-		$('#nav > ul').dropotron({
-			mode: 'fade',
-			noOpenerFade: true,
-			expandMode: (browser.mobile ? 'click' : 'hover')
-		});
-
 	// Nav Panel.
 
 		// Button.
