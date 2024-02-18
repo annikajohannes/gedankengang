@@ -415,7 +415,7 @@ header.special .icon:before {
 	color:#126567;
 }
 
-.newsimages > img {
+.imagesection > img {
 	width: 620px;
 }
 
@@ -426,7 +426,7 @@ header.special .icon:before {
 
 /* mobile */
 @media screen and (max-width: 620px) {
-	.newsimages > img {
+	.imagesection > img {
 		width: 100%;
 	}
 }
