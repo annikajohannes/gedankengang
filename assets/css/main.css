@@ -276,7 +276,7 @@ header.special .icon:before {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 10000;
+	z-index: 100;
 }
 #header h1 {
 	font-weight: 900;
@@ -483,7 +483,7 @@ header.special .icon:before {
 		position: fixed;
 		top: 0;
 		width: 50%;
-		z-index: 10001;
+		z-index: 101;
 	}
 	#navButton .toggle {
 		text-decoration: none;
@@ -551,7 +551,7 @@ header.special .icon:before {
 		position: fixed;
 		top: 0;
 		width: 275px;
-		z-index: 10002;
+		z-index: 102;
 		background: #1c2021;
 		color: #fff;
 		font-size: 0.8em;
