@@ -68,7 +68,7 @@ mailInput.oninput = validateInput
 
 function bookSlot(date) {
 	const xhr = new XMLHttpRequest();
-	xhr.open("POST", "https://gradle.onepiece.software:32565/appointment", true);
+	xhr.open("POST", "https://mailer.onepiece.software/appointment", true);
 	xhr.setRequestHeader('Content-Type', 'application/json');
 	xhr.onreadystatechange = function (oEvent) {
 		if (xhr.readyState === 4) {
